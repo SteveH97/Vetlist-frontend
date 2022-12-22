@@ -1,0 +1,83 @@
+.patientCard{
+    display: flex;
+    width: 70%;
+    height: 5rem;
+    background-color: white;
+    border-radius: 10px;
+    border-style: none;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 1rem 0;
+
+    @media screen and (max-width: 480px){
+        height: 20rem;
+        flex-direction: column;
+    }
+}
+
+.patientCard__info{
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+
+    h5{
+        margin-left: 1rem;
+    }
+
+    @media screen and (max-width: 480px){
+        flex-direction: column;
+        width: 100%;
+
+        h5{
+            font-size: 16px;
+        }
+    }
+}
+
+.patientCard__buttons{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    @media screen and (max-width: 480px){
+        flex-direction: row;
+        width: 100%;   
+        height: auto;
+    }
+}
+
+.patientCard__buttons-edit{
+    display: flex;
+    height: 50%;
+    border-style: none;
+    border-radius: 0 10px 0 0;
+    background-color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    
+
+    @media screen and (max-width: 480px){
+        width: 50%;
+        height: 100%;
+        border-radius: 0 0 0 10px;
+    }
+
+}
+
+.patientCard__buttons-delete{
+    height: 50%;
+    border-style: none;
+    border-radius: 0 0 10px 0;
+    background-color: #CC997A;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 480px){
+        width: 50%;
+        height: 100%;
+        border-radius: 0 0 10px 0;
+    }
+
+}
